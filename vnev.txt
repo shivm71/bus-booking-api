@@ -1,0 +1,1 @@
+"C:\Users\IT\Documents\django practice\ecom\venv\Scripts\activate.bat"

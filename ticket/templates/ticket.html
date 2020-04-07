@@ -1,0 +1,11 @@
+{% if selected_tickets %}
+    <ul>
+    {% for dates in selected_tickets %}
+     {% if dates. != True %}
+        <li><a href="{% url 'ticket:booktic' dates.id %}">{{dates.ticno}}</a></li>
+     {% endif %}   
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}

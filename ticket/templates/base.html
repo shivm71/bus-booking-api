@@ -1,0 +1,10 @@
+{% if date %}
+    <ul>
+    {% for dates in date %}
+        <li><a href="{% url 'ticket:datetotic' dates.id %}">{{ dates.id}} {{dates.date}}</a></li>
+        
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
